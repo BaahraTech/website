@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Baahra Technologies</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.navbar {
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+footer{
+	bottom: 0;
+}
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+ .dropbtn {
+  margin-bottom: 0;
+    
+    z-index: 9999;
+    border: 0;
+    font-size: 14px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 2px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  background-color: #2d2d30 ;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 7px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {text-decoration:underline ;text-decoration-color: White;}
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>                        
+			</button>
+			<a href="index.html"><img src="baahra.png" style=" height:50px;width:150px;"></a>    </div>
+		  <div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right">
+		  <div class="dropdown">
+		  
+			<a href="index.html"><button class="dropbtn"><i class="fa fa-home"></i> Home</button></a>
+		  </div>
+			  <div class="dropdown">
+			<a href="Solutions.html"><button class="dropbtn"><i class="fa fa-wrench"></i> Solutions</button></a>
+			<div class="dropdown-content">
+				<a href="AI&ML.html">AI & ML</a>
+				<a href="Java.html">Java</a>
+				<a href="web.html">Web Devolopment</a>
+			<a href="php.html">PHP</a>
+			<a href="uiux.html">UI/UX</a>
+			<a href="iot.html">Internet of Things</a>
+			<a href="rd.html">Research and Devolopment</a> 	
+		  </div></div>
+		  <div class="dropdown">
+			<a href="industries.html"><button class="dropbtn"><i class="fa fa-building-o"></i> Industries</button></a>
+		  </div>
+		  <div class="dropdown">
+			<a href="products.html"><button class="dropbtn"><i class="fa fa-shopping-cart"></i> Products</button></a>
+		  </div>
+	  <div class="dropdown">
+			 <button class="dropbtn"><i class="fa fa-reorder"></i> More</button>
+			<div class="dropdown-content">
+			<a href="events.html">Events</a>
+				<a href="training.html">Trainings</a>
+				<a href="blog.html">Blog</a>
+				<a href="careers.html">Careers</a>
+		   </div>
+	  </div>
+		  <div class="dropdown">
+			<a href="contact.html"><button class="dropbtn"><i class="fa fa-phone"></i> Contact Us</button></a>
+		  </div>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+	  <br></br>
+
+
+
+
+
+
+
+
+
+<!-- Container (Footer Section) -->
+
+	<footer class="footer-distributed">
+ 
+		<div class="footer-left">
+ 
+		<a href="#myPage"><img src="baahra.png" style=" height:80px;width:180px;"></a>
+ 
+		<p class="footer-links">
+		<a href="#">Home</a>
+	·
+		<a href="Solutions.html">Solutions</a>
+	·
+		<a href="industries.html">Industries</a>
+	
+	.	<a href="products.html">Products</a>
+	
+	.	<a href="contact.html">Contact Us</a>
+	
+		<a href="#"></a>
+		</p>
+ 
+		<p class="footer-company-name">Baahra Technologies &copy; 2020</p>
+		</div>
+ 
+		<div class="footer-center">
+ 
+		<div>
+		<i class="fa fa-map-marker"></i>
+		<p><span></span> Washington, US</p>
+		</div>
+ 
+		<div>
+		<i class="fa fa-phone"></i>
+		<p>+1 555 123456</p>
+		</div>
+ 
+		<div>
+		<i class="fa fa-envelope"></i>
+		<p><a href="mailto:support@company.com">baahrateam2020@gmail.com.com</a></p>
+		</div>
+ 
+		</div>
+ 
+		<div class="footer-right">
+ 
+		<p class="footer-company-about">
+		<span>About the company</span>
+	A Baahra Technologies is a company whose primary products are various forms of software, software technology, distribution, and software product development. 
+		</p>
+ 
+		<div class="footer-icons">
+ 
+		<a href="#"><i class="fa fa-facebook"></i></a>
+		<a href="#"><i class="fa fa-twitter"></i></a>
+		<a href="#"><i class="fa fa-linkedin"></i></a>
+		<a href="#"><i class="fa fa-github"></i></a>
+ 
+		</div>
+ 
+		</div>
+ 
+		</footer>
+
+
+
+</body>
+</html>
